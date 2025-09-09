@@ -1,4 +1,4 @@
-# Bérenger Hto Portfolio
+# Bérenger Hto
 
 Ceci est mon portfolio réalisé avec soin :)
 
