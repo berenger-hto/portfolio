@@ -35,12 +35,13 @@ type PopUpProps = CreationProps
 export function Section5() {
     const items: Item[] = [
         {
-            name: "Furniseat",
+            name: "Quiz Min",
             description:
-                "Furniseat est un site Web de meubles modernes conçu pour présenter des pièces intemporelles et contemporaines pour chaque pièce de la maison. Avec une esthétique épurée, une navigation intuitive et une narration immersive des produits, il transforme l'achat de meubles en ligne en une expérience inspirante et sans effort.",
-            github: "https://github.com/berenger-hto",
+                "QuizMin est une petite app interactive et évolutive pour contrôler vérifier votre culture générale et en apprendre plus davanatage. Cultivez-vous plus en testant et en comparant vos connaissances avec vos proches.",
+            github: "https://github.com/berenger-hto/quiz",
             date: 2024,
-            image: creation1
+            image: creation1,
+            link: "https://quiz-min.onrender.com"
         },
         {
             name: "EcomWeb",
