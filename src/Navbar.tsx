@@ -10,7 +10,7 @@ export function Navbar({className, ...props}: Props) {
     const [direction, setDirection] = useState(-1)
 
     return <div
-        className={clsx("backdrop-blur bg-card/70 dark:bg-card/70 z-[100] w-[95%] md:w-3xl lg:w-5xl h-12 fixed left-1/2 top-12 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-between py-9 px-5 shadow-[0px_0px_31px_-9px_rgba(0,_0,_0,_0.1)] rounded-xl", className)} {...props}>
+        className={clsx("backdrop-blur bg-card/70 dark:bg-card/70 z-[100] w-[95%] md:w-3xl lg:w-5xl h-12 fixed left-1/2 top-12 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-between py-9 px-5 shadow-[0px_0px_31px_-9px_rgba(0,_0,_0,_0.1)] rounded-3xl", className)} {...props}>
         <div className="flex gap-2 justify-center items-center">
             <TextLoop
                 transition={{

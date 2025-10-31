@@ -11,7 +11,7 @@ import {
 import {motion} from "motion/react";
 import {Button} from "@/components/ui/button.tsx";
 import creation1 from "../../assets/creations/1.png"
-import creation2 from "../../assets/creations/2.webp"
+import creation2 from "../../assets/creations/2.png"
 import creation3 from "../../assets/creations/3.webp"
 import {type MouseEvent} from "react";
 import {animationProps} from "@/components/sections/Section3.tsx";
@@ -39,17 +39,18 @@ export function Section5() {
             description:
                 "QuizMin est une petite app interactive et évolutive pour contrôler vérifier votre culture générale et en apprendre plus davanatage. Cultivez-vous plus en testant et en comparant vos connaissances avec vos proches.",
             github: "https://github.com/berenger-hto/quiz",
-            date: 2024,
+            date: 2025,
             image: creation1,
             link: "https://quiz-min.onrender.com"
         },
         {
-            name: "EcomWeb",
+            name: "Numeric Clock",
             description:
-                "Interface de commerce électronique moderne conçue pour une découverte fluide des produits et un filtrage transparent. 🛒 Cette conception de marché équilibre des visuels épurés avec des composants fonctionnels - des onglets de catégories dynamiques aux curseurs de prix intuitifs et aux filtres de marque intelligents.",
-            github: "https://github.com/berenger-hto",
-            date: 2024,
-            image: creation2
+                "Numeric clock est une petite app d’horloge qui affiche l’heure locale de ton appareil et permet d’ajouter d’autres villes pour voir leur heure en temps réel. Possibilité de l'utiliser comme horloge sur ton téléphone ou PC en passant en mode plein écran lorsque tu travailles",
+            github: "https://github.com/berenger-hto/numeric-clock",
+            date: 2025,
+            image: creation2,
+            link: "https://numeric-clock.onrender.com"
         },
         {
             name: "Pharmacie",
@@ -128,7 +129,7 @@ const PopUp = ({data}: PopUpProps) => {
 
     return <Dialog>
         <DialogTrigger asChild>
-            <Button variant="outline">Plus d'infos</Button>
+            <Button variant="outline" className="cursor-pointer">Plus d'infos</Button>
         </DialogTrigger>
         <DialogContent>
             <DialogHeader>
@@ -136,7 +137,7 @@ const PopUp = ({data}: PopUpProps) => {
                 <DialogDescription className="text-base">
                     <p className="mb-4">{description}</p>
                     <a
-                        href={link ? link : "#"}
+                        href={link || "#"}
                         target="_blank"
                         className="border-dotted border-gray-900 dark:border-neutral-500 hover:border-b-2 text-gray-900 dark:text-white font-medium"
                         onClick={handleRedirect}
